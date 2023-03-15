@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
 .container {
     width: 100%;
     height: 100vh;
@@ -11,11 +16,11 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background: linear-gradient(270deg, #2f80af, #4eade3);
+    background: linear-gradient(270deg, rgba(2, 112, 176, 0.75), rgba(140, 211, 252, 0.75));
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 .btn {
     text-decoration: none;
@@ -49,9 +54,12 @@
 }
 .nom {
     font-family: 'Kanit', sans-serif;
-    font-size: 3rem;
+    font-size: 3em;
+}
+h2 {
+    text-shadow: 0 0 .3em rgba(0, 0, 0, 0.15);
 }
 .pays {
     font-family: 'Kanit', sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.75em;
 }

@@ -90,7 +90,8 @@ const artistes = {
 
 // Stock les éléments html suivants dans des variables
 const nom = document.querySelector(".nom h2"),
-  pays = document.querySelector(".pays h3")
+      pays = document.querySelector(".pays h3"),
+      bg = document.querySelector("body")
 
 // Vérifie Si localStorage est prêt
 if (localStorage.getItem("artiste-0") && localStorage.getItem("Mika")) {
@@ -115,3 +116,4 @@ const nomArtiste = localStorage.getItem("artiste-" + randomNumber)
 // Injecte le nom et le pays de l'artiste dans l'interface HTML
 nom.innerHTML = nomArtiste
 pays.innerHTML = localStorage.getItem(nomArtiste)
+bg.style.backgroundImage = `url('./assets/images/artiste-${randomNumber}.png')`
